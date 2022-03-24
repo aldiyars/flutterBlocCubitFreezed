@@ -1,0 +1,1 @@
+import 'package:flutter_bloc_app/domain/entities/task.dart';import 'package:retrofit/http.dart';import 'package:dio/dio.dart';part 'rest_client.g.dart';@RestApi(baseUrl: 'https://623c189d8e9af587894bbc9e.mockapi.io/')abstract class RestClient {  factory RestClient(Dio dio, {String baseUrl}) = _RestClient;  @GET('/api/v1/task')  Future<List<Task>> getTasks();}

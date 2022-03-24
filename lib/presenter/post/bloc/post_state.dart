@@ -1,0 +1,1 @@
+part of 'post_bloc.dart';@freezedclass PostState with _$PostState {  const factory PostState.loading() = _loading;  const factory PostState.loaded(List<Task> tasks) = _loaded;  const factory PostState.error(Object? error) = _error;}
